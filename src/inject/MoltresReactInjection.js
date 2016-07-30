@@ -13,8 +13,8 @@ export default class MoltresReactInjection {
   static inject() {
     invariant(
       !MoltresReactInjection.injected,
-      `MoltresReactInjection: Cannot inject MoltresReact twice`
-    )
+      'MoltresReactInjection: Cannot inject MoltresReact twice'
+    );
     MoltresReactInjection.injected = true;
     Engine.injection.injectDriverFactory(DriverFactory);
     Engine.injection.injectDriverRegistry(DriverRegistry);

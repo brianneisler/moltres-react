@@ -11,15 +11,18 @@
     "modules": true
   },
   "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
   "rules": {
     "arrow-spacing": [2, { "before": true, "after": true }],
     "comma-dangle": [2, "never"],
     "curly": 2,
     "eol-last": 2,
-    "id-length": [2, {"min": 2, "max": 50, "properties": "never", "exceptions": ["i", "x", "_"]}],
+    "id-length": [2, {"min": 2, "max": 50, "properties": "never", "exceptions": ["i", "x", "_", "R"]}],
     "indent": [2, 2, {"SwitchCase": 1}],
-    "no-alert": 2,
-    "no-console": 2,
+    "no-alert": 0,
+    "no-console": 0,
     "no-const-assign": 2,
     "no-else-return": 2,
     "no-shadow": 2,
@@ -29,6 +32,11 @@
     "quotes": [2, "single"],
     "semi": [2, "always"],
     "spaced-comment": 0,
-    "strict": [2, "never"]
+    "strict": [2, "never"],
+    "react/no-multi-comp": 0,
+    "react/prefer-es6-class": 2,
+    "react/jsx-uses-react": [2, { "pragma": "React" }],
+    "react/jsx-uses-vars": 2,
+    "react/no-danger": 0
   }
 }

@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import _ from 'mudash';
+import { Component, PropTypes } from 'react';
 import { Provider } from 'react-redux';
 import { Engine } from 'moltres';
 import EngineShape from './EngineShape';
