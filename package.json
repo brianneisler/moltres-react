@@ -44,6 +44,10 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "^3.0.7"
   },
+  "peerDependencies": {
+    "moltres": "^0.0.1",
+    "react": "^0.14.0 || ^15.0.0-0"
+  },
   "license": "MIT",
   "keywords": [
     "moltres",
