@@ -1,17 +1,17 @@
 {
-  "name": "moltres-react",
+  "name": "react-moltres",
   "version": "0.0.1",
   "main": "./index.js",
   "description": "Moltres react integration",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brianneisler/moltres-react.git"
+    "url": "git+https://github.com/brianneisler/react-moltres.git"
   },
   "author": "Brian Neisler <me@brianneisler.com>",
   "bugs": {
-    "url": "https://github.com/brianneisler/moltres-react/issues"
+    "url": "https://github.com/brianneisler/react-moltres/issues"
   },
-  "homepage": "https://github.com/brianneisler/moltres-react#readme",
+  "homepage": "https://github.com/brianneisler/react-moltres#readme",
   "scripts": {
     "clean": "gulp clean",
     "dev": "gulp dev",

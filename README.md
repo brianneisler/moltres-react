@@ -1,2 +1,2 @@
-# moltres-react
+# react-moltres
 Moltres bindings for react
