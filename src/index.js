@@ -1,3 +1,3 @@
-export * from './app';
-export * from './inject';
-export * from './util';
+export * from './app'
+export * from './inject'
+export * from './util'

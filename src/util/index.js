@@ -1,1 +1,1 @@
-export { default as isComponentClass } from './isComponentClass';
+export { default as isComponentClass } from './isComponentClass'

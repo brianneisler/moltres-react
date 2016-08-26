@@ -1,1 +1,1 @@
-export { default as MoltresReactInjection } from './MoltresReactInjection';
+export { default as MoltresReactInjection } from './MoltresReactInjection'

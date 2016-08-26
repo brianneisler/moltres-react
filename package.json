@@ -1,6 +1,6 @@
 {
   "name": "react-moltres",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./index.js",
   "description": "Moltres react integration",
   "repository": {
@@ -20,33 +20,33 @@
   "dependencies": {
     "es6-symbol": "^3.1.0",
     "immutable": "^3.7.6",
-    "immutable-devtools": "^0.0.7",
-    "mudash": "^0.0.1",
+    "mudash": "^0.0.2",
     "react-redux": "^4.4.5"
   },
   "devDependencies": {
-    "babel-core": "^6.9.1",
-    "babel-eslint": "^6.0.4",
-    "babel-polyfill": "6.9.1",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.5.0",
-    "babel-preset-stage-1": "^6.5.0",
-    "babel-preset-stage-2": "^6.5.0",
-    "bluebird": "^3.4.0",
+    "babel-core": "^6.13.2",
+    "babel-eslint": "^6.1.2",
+    "babel-polyfill": "6.13.0",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-1": "^6.13.0",
+    "babel-preset-stage-2": "^6.13.0",
+    "bluebird": "^3.4.1",
     "chai": "^3.5.0",
-    "del": "^2.2.0",
-    "eslint": "^2.10.2",
-    "eslint-plugin-react": "^5.1.1",
+    "del": "^2.2.1",
+    "eslint": "^3.2.2",
+    "eslint-plugin-react": "^6.0.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
-    "gulp-eslint": "^2.0.0",
-    "gulp-mocha": "^2.2.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-mocha": "^3.0.0",
     "gulp-recipe": "0.0.2",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-util": "^3.0.7"
+    "gulp-util": "^3.0.7",
+    "immutable-devtools": "^0.0.7"
   },
   "peerDependencies": {
-    "moltres": "^0.0.1",
+    "moltres": "^0.0.2",
     "react": "^0.14.0 || ^15.0.0-0"
   },
   "license": "MIT",
