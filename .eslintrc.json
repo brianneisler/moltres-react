@@ -37,7 +37,7 @@
     "strict": [2, "never"],
     "react/no-multi-comp": 0,
     "react/prefer-es6-class": 2,
-    "react/jsx-uses-react": [2, { "pragma": "React" }],
+    "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
     "react/no-danger": 0
   }

@@ -20,7 +20,7 @@
   "dependencies": {
     "es6-symbol": "^3.1.0",
     "immutable": "^3.7.6",
-    "mudash": "^0.0.2",
+    "mudash": "^0.0.5",
     "react-redux": "^4.4.5"
   },
   "devDependencies": {
@@ -34,8 +34,8 @@
     "bluebird": "^3.4.1",
     "chai": "^3.5.0",
     "del": "^2.2.1",
-    "eslint": "^3.2.2",
-    "eslint-plugin-react": "^6.0.0",
+    "eslint": "^3.4.0",
+    "eslint-plugin-react": "^6.2.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-eslint": "^3.0.1",
