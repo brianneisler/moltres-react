@@ -1,14 +1,16 @@
 import _ from 'mudash'
-import { Component, PropTypes } from 'react'
+import React, { Component, PropTypes } from 'react'
+import { View } from 'react-native'
 import { Provider } from 'react-redux'
-import { Engine, handleChanges } from 'moltres'
+import { handleChanges } from 'moltres'
 import EngineShape from './EngineShape'
 import { MoltresReactInjection } from '../inject'
 
 export default class Moltres extends Component {
 
   static propTypes = {
-    blueprint: PropTypes.object
+    blueprint: PropTypes.object,
+    engine: EngineShape.isRequired
   }
 
   static defaultProps = {
@@ -22,7 +24,6 @@ export default class Moltres extends Component {
 
   constructor(props, context) {
     super(props, context)
-    this.engine = Engine
     this.handleBlueprintChange = this.handleBlueprintChange.bind(this)
     this.propChangeHandlers = {
       blueprint: this.handleBlueprintChange
@@ -30,7 +31,7 @@ export default class Moltres extends Component {
   }
 
   componentWillMount() {
-    MoltresReactInjection.inject()
+    MoltresReactInjection.inject(this.props.engine)
     handleChanges(this.propChangeHandlers, this.props)
   }
 
@@ -39,19 +40,19 @@ export default class Moltres extends Component {
   }
 
   getChildContext() {
-    return { engine: this.engine }
+    return { engine: this.props.engine }
   }
 
   render() {
     return (
-      <Provider store={this.engine.getStore()}>
-        this.renderDrivers()
+      <Provider store={this.props.engine.getStore()}>
+        { this.renderDrivers() || <View/> }
       </Provider>
     )
   }
 
   renderDrivers() {
-    const drivers = this.engine.getDriversInDependencyOrder()
+    const drivers = this.props.engine.getDriversInDependencyOrder()
     return _.reduceRight(drivers, (child, driver) => {
       if (_.isFunction(_.get(driver, 'renderDriver'))) {
         return driver.renderDriver(child)
@@ -61,6 +62,6 @@ export default class Moltres extends Component {
   }
 
   handleBlueprintChange(blueprint) {
-    this.engine.updateBlueprint(blueprint)
+    this.props.engine.updateBlueprint(blueprint)
   }
 }

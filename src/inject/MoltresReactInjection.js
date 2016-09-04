@@ -2,7 +2,6 @@ import invariant from 'invariant'
 import {
   DriverFactory,
   DriverRegistry,
-  Engine,
   SchemaCache
 } from 'moltres'
 
@@ -10,14 +9,14 @@ export default class MoltresReactInjection {
 
   static injected = false
 
-  static inject() {
+  static inject(engine) {
     invariant(
       !MoltresReactInjection.injected,
       'MoltresReactInjection: Cannot inject MoltresReact twice'
     )
     MoltresReactInjection.injected = true
-    Engine.injection.injectDriverFactory(DriverFactory)
-    Engine.injection.injectDriverRegistry(DriverRegistry)
-    Engine.injection.injectSchemaCache(SchemaCache)
+    engine.injection.injectDriverFactory(DriverFactory)
+    engine.injection.injectDriverRegistry(DriverRegistry)
+    engine.injection.injectSchemaCache(SchemaCache)
   }
 }
