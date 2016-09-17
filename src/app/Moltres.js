@@ -58,7 +58,7 @@ export default class Moltres extends Component {
         return driver.renderDriver(child)
       }
       return child
-    }, null)
+    }, this.props.children)
   }
 
   handleBlueprintChange(blueprint) {

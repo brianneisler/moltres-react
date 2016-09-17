@@ -1,6 +1,6 @@
 {
   "name": "react-moltres",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "./index.js",
   "description": "Moltres react integration",
   "repository": {
@@ -46,7 +46,7 @@
     "immutable-devtools": "^0.0.7"
   },
   "peerDependencies": {
-    "moltres": "^0.0.4",
+    "moltres": "^0.0.8",
     "react": "^0.14.0 || ^15.0.0-0"
   },
   "license": "MIT",
