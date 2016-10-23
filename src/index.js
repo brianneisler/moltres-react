@@ -1,3 +1,3 @@
 export * from './app'
-export * from './inject'
+export * from './recompose'
 export * from './util'

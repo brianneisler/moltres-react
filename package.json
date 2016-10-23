@@ -1,6 +1,6 @@
 {
   "name": "react-moltres",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "./index.js",
   "description": "Moltres react integration",
   "repository": {
@@ -20,8 +20,9 @@
   "dependencies": {
     "es6-symbol": "^3.1.0",
     "immutable": "^3.8.1",
-    "mudash": "^0.0.5",
-    "react-redux": "^4.4.5"
+    "mudash": "^0.0.8",
+    "react-redux": "^4.4.5",
+    "recompose": "^0.20.2"
   },
   "devDependencies": {
     "babel-core": "^6.13.2",
@@ -46,7 +47,7 @@
     "immutable-devtools": "^0.0.7"
   },
   "peerDependencies": {
-    "moltres": "^0.0.8",
+    "moltres": "^0.0.11",
     "react": "^0.14.0 || ^15.0.0-0"
   },
   "license": "MIT",
